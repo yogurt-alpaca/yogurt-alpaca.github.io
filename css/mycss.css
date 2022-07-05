@@ -1,14 +1,29 @@
+/* 白色卡片 */
 .layout #recent-posts,
 #aside-content .card-widget,
-#post {
-    opacity: 0.9;
-}
-
+#post,
+#archive,
 #nav.show {
     opacity: 0.9;
 }
 
+/* 头像 */
 .avatar-img img {
     -webkit-transition: none;
     transition: none;
+}
+
+/* 副标题 */
+#subtitle{
+    letter-spacing: 3px;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+
+/* 文章封面标题 */
+.article-title {
+    transition: 0.4s;
+}
+.article-title:hover{
+    transform: translateX(8px);
 }
