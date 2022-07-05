@@ -1,0 +1,14 @@
+.layout #recent-posts,
+#aside-content .card-widget,
+#post {
+    opacity: 0.9;
+}
+
+#nav.show {
+    opacity: 0.9;
+}
+
+.avatar-img img {
+    -webkit-transition: none;
+    transition: none;
+}
