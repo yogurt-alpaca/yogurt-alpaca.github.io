@@ -1,10 +1,27 @@
 /* 白色卡片 */
+/* #post,
+#page,
 .layout #recent-posts,
 #aside-content .card-widget,
-#post,
+.recent-post-item,
 #archive,
 #nav.show {
-    opacity: 0.9;
+   opacity: 0.9;
+} */
+#aside-content .card-widget, 
+#recent-posts>.recent-post-item, 
+.layout_page>div:first-child:not(.recent-posts), 
+.layout_post>#page, .layout_post>#post, 
+.read-mode .layout_post>#post{
+    /* 以下代表白色透明度为0.3 */
+    background: rgba(255,255,255,0.8);
+}
+#aside-content .card-widget{
+    opacity: 0.8;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 /* 头像 */
@@ -26,4 +43,51 @@
 }
 .article-title:hover{
     transform: translateX(8px);
+}
+
+/* 个人信息卡片 */
+#aside-content .card-info{
+    height: 378px;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#aside-content .card-info:hover {
+    opacity: 1;
+}
+
+/* 图标 */
+
+.social-icon:nth-child(1){
+    --i : 1;
+}
+.social-icon:nth-child(2){
+    --i : 2;
+}
+.social-icon:nth-child(3){
+    --i : 3;
+}
+.card-info-social-icons{
+
+}
+.social-icon{
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(25px);
+    transition-delay: calc(0.1s * var(--i))
+}
+#aside-content .card-info:hover .social-icon{
+    transform: translateY(0); 
+    opacity: 1;
+}
+.social-icon .fab:hover{
+    transform: none;
+}
+
+#aside-content .card-info .is-center:first-child{
+    transition: 0.5s;
+    transform: translateY(5px);
+} 
+#aside-content .card-info:hover .is-center:first-child {
+    transform: translateY(-5px);
 }
