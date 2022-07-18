@@ -25,10 +25,10 @@ body::-webkit-scrollbar{
 }
 
 /* 头像 */
-.avatar-img img {
+/* .avatar-img img {
     -webkit-transition: none;
     transition: none;
-}
+} */
 
 /* 副标题 */
 #subtitle{
@@ -41,7 +41,7 @@ body::-webkit-scrollbar{
 .article-title {
     transition: 0.4s;
 }
-.article-title:hover{
+.recent-post-item:hover .article-title{
     transform: translateX(8px);
 }
 
